@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kazichaska/react-portfolio/static/css/main.afb3de01.css",
+    "main.js": "/kazichaska/react-portfolio/static/js/main.71ccce49.js",
+    "static/js/787.a2cb61a6.chunk.js": "/kazichaska/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/cover-page.jpg": "/kazichaska/react-portfolio/static/media/cover-page.bd7cc7dc44753007b299.jpg",
+    "index.html": "/kazichaska/react-portfolio/index.html",
+    "main.afb3de01.css.map": "/kazichaska/react-portfolio/static/css/main.afb3de01.css.map",
+    "main.71ccce49.js.map": "/kazichaska/react-portfolio/static/js/main.71ccce49.js.map",
+    "787.a2cb61a6.chunk.js.map": "/kazichaska/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afb3de01.css",
+    "static/js/main.71ccce49.js"
+  ]
+}
