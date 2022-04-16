@@ -78,7 +78,7 @@ Find me on Github [kazichaska](https://github.com/kazichaska)<br />
 Email me with any question: kazichaska@gmail.com <br />
 
 ## Deployed Application Video Link 
-
+https://kazichaska.github.io/react-portfolio/ 
 
 ## Screenshots of the code
 ![application](/src/assets/readme/application.png)
