@@ -1,0 +1,18 @@
+.portfolio {
+  width: 35%;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+  flex-direction: column;
+}

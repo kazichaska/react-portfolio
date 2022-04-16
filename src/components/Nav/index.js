@@ -1,10 +1,11 @@
 import React from 'react';
-
+import './nav.css'
 
 function Nav({ currentPage, handlePageChange }) {
     return (
         <header className='nav nav-item'>
-        <h1>Kazi Islam's Portfolio</h1>
+        <h1>Kazi Islam</h1>
+        <img src="/images/img_avatar.png" alt="Avatar" className="avatar"></img>
         <ul className="nav nav-tabs">
             <li className="nav-items">
             <a

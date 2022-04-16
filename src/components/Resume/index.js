@@ -8,7 +8,7 @@ import React, { PureComponent } from "react";
 export default function Resume() {
     return (
         <div>
-            <h1>Resume</h1>
+            {/* <h1>Resume</h1>
             <p>
                 Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
                 Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
@@ -23,7 +23,7 @@ export default function Resume() {
                 in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
                 bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
                 est ligula suscipit velit, sed bibendum turpis dui in sapien.
-            </p>
+            </p> */}
         </div>
     );
 }

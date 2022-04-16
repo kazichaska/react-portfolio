@@ -1,12 +1,17 @@
 import React from "react";
 import "./App.css";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
+
 
 const App = () => {
   return (
-    <main className="main-bg">
-      <Home />
-    </main>
+    <div className="app-container">
+      <main className="main-bg">
+        <Home />
+      </main>
+      <Footer />
+    </div>
 
   );
 }

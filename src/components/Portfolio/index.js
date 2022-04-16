@@ -1,5 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import './portfolio.css'
 
 function Portfolio() {
     return (
@@ -7,58 +11,66 @@ function Portfolio() {
         //  JSX
         <div>
             <main>
-                <h2 style={{textAlign:"center"}}>Slideshow Gallery</h2>
-
-                <div class="container">
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 6</div>
-                        <img src="images/comp_hardware.jpeg" style={{ width: "100%" }} />
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 6</div>
-                        <img src="images/img_avatar.png" style={{ width: "100%" }} />
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 6</div>
-                        <img src="images/Run Buddy.png" style={{ width: "100%" }} />
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 6</div>
-                        <img src="images/saysomething.png" style={{ width: "100%" }} />
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 6</div>
-                        <img src="images/sportlytics.png" style={{ width: "100%" }} />
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-
-                    <div class="caption-container">
-                        <p id="caption"></p>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <img class="demo-1 cursor" src="images/comp_hardware.jpeg" style={{ width: "100%" }} onclick="currentSlide(1)" alt="The Woods" />
-                        </div>
-                        <div class="column">
-                            <img class="demo-1 cursor" src="images/img_avatar.png" style={{ width: "100%" }} onclick="currentSlide(2)" alt="Cinque Terre" />
-                        </div>
-                        <div class="column">
-                            <img class="demo-1 cursor" src="images/Run Buddy.png" style={{ width: "100%" }} onclick="currentSlide(3)" alt="Mountains and fjords" />
-                        </div>
-                        <div class="column">
-                            <img class="demo-1 cursor" src="images/saysomething.png" style={{ width: "100%" }} onclick="currentSlide(4)" alt="Northern Lights" />
-                        </div>
-                        <div class="column">
-                            <img class="demo-1 cursor" src="images/sportlytics.png" style={{ width: "100%" }} onclick="currentSlide(5)" alt="Nature and sunrise" />
-                        </div>
-                    </div>
+                <div className="portfolio-container">
+                    <Splide options={{ rewind: true }} aria-label="Portfolio Slides">
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>Run Buddy</h1>
+                                {/* <link>"https://kazichaska.github.io/run-buddy/"</link> */}
+                                <img className="portfolio" src="/images/Run Buddy.png" alt="Run Buddy" />
+                                <a href="https://kazichaska.github.io/run-buddy/">Link to deployed application</a>
+                                <a href="https://github.com/kazichaska/run-buddy"><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>SaySomething</h1>
+                                <img className="portfolio" src="/images/saysomething.png" alt="saysomthing" />
+                                <a href="https://afternoon-island-61573.herokuapp.com/">Link to deployed application</a>
+                                <a href="https://github.com/kazichaska/saysomething"><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>Sportlytics</h1>
+                                <img className="portfolio" src="/images/sportlytics.png" alt="sportlytics" />
+                                <a href="https://kazichaska.github.io/Sportlytics/">Link to deployed application</a>
+                                <a href="https://github.com/kazichaska/Sportlytics"><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>Tech Blog</h1>
+                                <img className="portfolio" src="/images/techblog.png" alt="techblog" />
+                                <a href="https://powerful-forest-82738.herokuapp.com/">Link to deployed application</a>
+                                <a href="https://github.com/kazichaska/tech-blog"><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>Pizza Hunt</h1>
+                                <img className="portfolio" src="/images/pizzahunt.png" alt="pizzahunt" />
+                                <a href="https://pure-lowlands-07353.herokuapp.com/">Link to deployed application</a>
+                                <a href="https://github.com/kazichaska/pizza-hunt"><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>Weather Dashboard</h1>
+                                <img className="portfolio" src="/images/weather-dashboard.png" alt="weather-dashboard" />
+                                <a href="https://kazichaska.github.io/weather-dashboard/">Link to deployed application</a>
+                                <a href="https://kazichaska.github.io/weather-dashboard/" ><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide>
+                            <div className="img-container">
+                                <h1>Note Taker</h1>
+                                <img className="portfolio" src="/images/note-taker.png" alt="note-taker" />
+                                <a href="https://mysterious-sea-32906.herokuapp.com/">Link to deployed application</a>
+                                <a href="https://github.com/kazichaska/note-taker"><i className="fa-brands fa-github"></i></a>
+                            </div>
+                        </SplideSlide>
+                    </Splide>
                 </div>
             </main>
         </div>

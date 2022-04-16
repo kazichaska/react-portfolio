@@ -1,9 +1,11 @@
 .main-bg {
-  background-image: url("../src/assets/cover/background.jpg");
-  height: 120vh;
+  background-image: url("../src/assets/cover/cover-page.jpg");
+  /* background-image: url("/public/images/mac.jpg"); */
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
+  min-height: calc(100vh - 82px);
 }
 
 .App {
@@ -50,7 +52,7 @@
   align-self: center;
   justify-content: space-between;
   display: flex;
-  margin-left: 10px;
+  margin-left: 250px;
   margin-right: 10px;
 }
 
@@ -65,5 +67,10 @@
 }
 
 a {
-  color: white;
+  color: #4E324E;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
 }
