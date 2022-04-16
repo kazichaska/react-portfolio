@@ -1,6 +1,13 @@
 import React from "react";
-import Portfolio from "./components/Portfolio";
+import "./App.css";
+import Home from "./components/Home";
 
-const App = () => <Portfolio />;
+const App = () => {
+  return (
+    <main className="main-bg">
+      <Home />
+    </main>
 
+  );
+}
 export default App;

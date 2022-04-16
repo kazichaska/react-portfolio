@@ -1,3 +1,11 @@
+.main-bg {
+  background-image: url("../src/assets/cover/background.jpg");
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
 .App {
   text-align: center;
 }
@@ -28,11 +36,34 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item {
+  background-color: orangered;
+  display: flex;
+  list-style: none;
+}
+
+.nav-item h1 {
+  align-self: flex-start;
+}
+
+.nav-tabs {
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+a {
+  color: white;
 }
