@@ -2,6 +2,15 @@ import React from 'react';
 import './nav.css'
 
 function Nav({ currentPage, handlePageChange }) {
+
+    function changeColorHover(e) {
+        e.target.style.background = 'green'
+    }
+
+    function resetColor(e) {
+        e.target.style.background = 'none'
+    }
+
     return (
         <header className='nav nav-item'>
         <h1>Kazi Islam</h1>
@@ -11,6 +20,8 @@ function Nav({ currentPage, handlePageChange }) {
             <a
                 href="#about"
                 onClick={() => handlePageChange('About')}
+                onMouseOver={changeColorHover}
+                onMouseLeave={resetColor}
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
             >
                 About Me
@@ -20,6 +31,8 @@ function Nav({ currentPage, handlePageChange }) {
             <a
                 href="#portfolio"
                 onClick={() => handlePageChange('Portfolio')}
+                onMouseOver={changeColorHover}
+                onMouseLeave={resetColor}
                 className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
             >
                 Portfolio
@@ -29,6 +42,8 @@ function Nav({ currentPage, handlePageChange }) {
             <a
                 href="#contact"
                 onClick={() => handlePageChange('Contact')}
+                onMouseOver={changeColorHover}
+                onMouseLeave={resetColor}
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
             >
                 Contact
